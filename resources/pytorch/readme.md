@@ -33,5 +33,16 @@ Note that this README file only provides method for installing in windows. So pl
 Then copy the Command given from above which is :"pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116" into you terminal, the terminal will then start installing PyTorch on your local machine. 
 ![image](https://user-images.githubusercontent.com/60185619/197436619-0cf836d6-1cc4-4d6c-9108-f8828bc1db0c.png)
 
+Because I already installed PyTorch, so i am not giving the installation process output here. 
+
+Once the installation for PyTorch is done, you can verify your PyTorch version by running this Python code below: 
+![image](https://user-images.githubusercontent.com/60185619/197438057-3b585476-633a-4f49-8572-79409173328f.png)
+(Note that you can also find this snip of code from this github under the same path as this README file, the name of this snip of code is "PyTorch_Version")
+
+You should see your output like this: 
+![image](https://user-images.githubusercontent.com/60185619/197438226-48108d79-e337-41d5-bac4-c6fcbabf97b1.png)
+(Note that the "Test1" is my python file name) 
+
+If you have everything the same as mine, congratulation. You have now successfully installed PyTorch into your local machine. 
 
 
