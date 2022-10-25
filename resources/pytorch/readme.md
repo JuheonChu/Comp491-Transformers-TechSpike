@@ -43,6 +43,16 @@ You should see your output like this:
 ![image](https://user-images.githubusercontent.com/60185619/197438226-48108d79-e337-41d5-bac4-c6fcbabf97b1.png)
 (Note that the "Test1" is my python file name) 
 
+Also feel free to try "torch_test1" file, which uses torch.rand (Returns a tensor filled with random numbers from a uniform distribution on the interval [0, 1)).
+
+Code looks like this: 
+
+![image](https://user-images.githubusercontent.com/60185619/197672279-2dde6f15-fd2e-4fab-895d-a192dc56badf.png)
+
+And here is the output: 
+![image](https://user-images.githubusercontent.com/60185619/197672532-c2eaee33-f7c9-4d97-bc8f-bbe6fa1c7752.png)
+
+
 If you have everything the same as mine, congratulation. You have now successfully installed PyTorch into your local machine. 
 
 
