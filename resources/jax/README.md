@@ -20,7 +20,7 @@ Below are they key JAX features used in machine learning.
 
 **Platform**
 
-To reduce hardware complexity, we installed jax and most of the support packages for GPU (CONDA, cuDNN) in the colab.
+To reduce hardware complexity, we installed jax and most of the support packages for GPU (CONDA, cuDNN) in a shared Google colab.
 - CUDA version 11.2
 - Python 3.7.15
 - 
