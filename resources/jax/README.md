@@ -1,4 +1,4 @@
-This document puts together our learning of JAX.
+This document puts together our learning of JAX and other information we found interesting.
 
 ## JAX basics for machine learning
 
@@ -11,6 +11,26 @@ Below are they key JAX features used in machine learning.
 3) Auto vectorization with vmap()
 4) Auto parallelization with pmap()
 5) Pseudo-random number generator (PRNG)
+
+**JIT**
+
+Can be used as a decorator 
+```
+@jit
+def func(x, y):
+  print("Hello transformers")
+```
+
+or higher-order function
+
+```
+def func(x, y):
+  print("Hello transformers")
+  
+func_2 = jit(slow_f)
+```
+- Use pure functions 
+
 
 ## Demo: NLP Model with JAX
 
