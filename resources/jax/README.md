@@ -12,7 +12,7 @@ Below are they key JAX features used in machine learning.
 4) Auto parallelization with pmap()
 5) Pseudo-random number generator (PRNG)
 
-**JIT**
+**JIT (Just-in-time compilation)**
 
 Can be used as a decorator 
 ```
@@ -46,3 +46,10 @@ To reduce hardware complexity, we installed jax and most of the support packages
 - 
 
 ## Glossary
+
+| Terms  | Definition |
+| ------------- | ------------- |
+| [CUDA](https://developer.nvidia.com/cuda-downloads)  |  A parallel computing platform and programming model which harnesses GPU power |
+| [cuDNN](https://developer.nvidia.com/CUDNN) | Deep Neural Network GPU-accelerated library |
+| TPU | Tensor Processing Unit. Hardware accelerator developed by Google for neural network and ML  |
+| SPMD | Single-program multiple-data (SPMD) programs |
