@@ -1,4 +1,4 @@
-This document puts together our learning of JAX and facts we found interesting.
+This document puts together our learning of JAX.
 
 ## JAX basics for machine learning
 
