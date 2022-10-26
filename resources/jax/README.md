@@ -2,7 +2,7 @@ This document puts together our learning of JAX.
 
 ## JAX basics for machine learning
 
-Most tutorials can be found on [JAX 101 documentation](https://jax.readthedocs.io/en/latest/jax-101/index.html) and [AISummer](https://theaisummer.com/jax/) article.
+Most fundamentals can be found on [JAX 101 documentation](https://jax.readthedocs.io/en/latest/jax-101/index.html) and [AISummer](https://theaisummer.com/jax/) article.
 
 
 Below are they key JAX features/transforms used in machine learning. 
@@ -47,8 +47,6 @@ Calculate gradients (derivatives), including 2nd/3rd order gradients
 
 Distribute multiple computations across TPU/GPU for a higher performance
 
-Distribute 
-
 ## Other useful information
 - JAX arrays are immutable 
 - Here is a helpful [gotcha list](https://github.com/google/jax#current-gotchas)
@@ -74,5 +72,6 @@ To reduce hardware complexity, we installed jax and most of the support packages
 | [cuDNN](https://developer.nvidia.com/CUDNN) | Deep Neural Network GPU-accelerated library |
 | TPU | Tensor Processing Unit. Hardware accelerator developed by Google for neural network and ML  |
 | SPMD | Single-program multiple-data (SPMD) programs |
+| XLA | Accelerated linear algebra |
 | Vectorization | |
 | Parallelization | |
