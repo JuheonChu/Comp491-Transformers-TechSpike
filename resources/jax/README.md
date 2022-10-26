@@ -14,7 +14,11 @@ Below are they key JAX features used in machine learning.
 
 ## Demo: NLP Model with JAX
 
-Tutorial: [Getting started with NLP using JAX](https://www.kaggle.com/code/guillemkami/getting-started-with-nlp-using-jax/notebook)
+**Tutorial**
+
+[Getting started with NLP using JAX](https://www.kaggle.com/code/guillemkami/getting-started-with-nlp-using-jax/notebook)
+
+**Platform**
 
 To reduce hardware complexity, we installed jax and most of the support packages for GPU (CONDA, cuDNN) in the colab.
 - CUDA version 11.2
