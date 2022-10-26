@@ -1,8 +1,8 @@
-## Glossary
+This document puts together our learning and understanding of JAX.
 
 ## JAX basics for machine learning
 
-Most tutorials can be found on [https://jax.readthedocs.io/en/latest/jax-101/index.html](JAX 101 documentation) and [https://theaisummer.com/jax/](AISummer) article.
+Most tutorials can be found on [JAX 101 documentation](https://jax.readthedocs.io/en/latest/jax-101/index.html) and [AISummer](https://theaisummer.com/jax/) article.
 
 Below are they key JAX features used in machine learning. 
 
@@ -20,3 +20,5 @@ To reduce hardware complexity, we installed jax and most of the support packages
 - CUDA version 11.2
 - Python 3.7.15
 - 
+
+## Glossary
