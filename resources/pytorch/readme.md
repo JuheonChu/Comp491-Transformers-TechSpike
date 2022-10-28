@@ -23,6 +23,8 @@ Pip3 is the official package manager and pip command for Python 3. It enables th
 
 ![image](https://user-images.githubusercontent.com/60185619/197435625-4363b099-f6eb-4f7e-b046-a688ae2fe97f.png)
 
+<br/>
+<br/>
 
 ## PyTorch Installation (Window)
 
