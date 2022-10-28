@@ -41,11 +41,13 @@ The terminal will then start installing PyTorch on your local machine as follows
 ![image](https://user-images.githubusercontent.com/60185619/197436619-0cf836d6-1cc4-4d6c-9108-f8828bc1db0c.png)
 
 <br/>
+
 **STEP 3**: When PyTorch installation is completed, verify PyTorch version by running following Python code below:
 <br/>
 ![image](https://user-images.githubusercontent.com/60185619/197438057-3b585476-633a-4f49-8572-79409173328f.png)
 
 <br/>
+
 **Output**: <br/>
 ![image](https://user-images.githubusercontent.com/60185619/197438226-48108d79-e337-41d5-bac4-c6fcbabf97b1.png)
 (Note that the "Test1" is my python file name) 
