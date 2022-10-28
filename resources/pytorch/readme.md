@@ -25,10 +25,10 @@ Pip3 is the official package manager and pip command for Python 3. It enables th
 <br/>
 
 ## PyTorch Installation (Window)
+
 <br/>
-**STEP 1**: Visit <a href="https://pytorch.org/"> *PyTorch* </a> 
-<br/>
-and scroll down the page untill you see this part:  <br/>
+
+**STEP 1**: Visit <a href="https://pytorch.org/"> *PyTorch* </a> and scroll down the page untill you see this part:  <br/><br/>
 ![image](https://user-images.githubusercontent.com/60185619/197436167-33508e07-cff1-4b9b-8c48-c022ad3590ad.png)
 <br/>
 
