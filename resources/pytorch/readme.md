@@ -22,7 +22,6 @@ Pip3 is the official package manager and pip command for Python 3. It enables th
 >>> pip -V.
 
 ![image](https://user-images.githubusercontent.com/60185619/197435625-4363b099-f6eb-4f7e-b046-a688ae2fe97f.png)
-
 <br/>
 
 ## PyTorch Installation (Window)
@@ -30,8 +29,8 @@ Pip3 is the official package manager and pip command for Python 3. It enables th
 **STEP 1**: Visit <a href="https://pytorch.org/"> *PyTorch* </a> 
 and scroll down the page untill you see this part:  <br/>
 ![image](https://user-images.githubusercontent.com/60185619/197436167-33508e07-cff1-4b9b-8c48-c022ad3590ad.png)
-
 <br/>
+
 **STEP 2**: Type following command in your local machine terminal and execute it.
 
 >>> pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 
