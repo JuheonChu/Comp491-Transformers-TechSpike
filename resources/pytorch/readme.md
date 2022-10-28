@@ -1,8 +1,8 @@
 This document outlines the setup process of PyTorch.
 
-##Prerequisite
+## Prerequisite
 
-1) Python: 
+1) **Python**: 
 
 Python allows you to use one of the most popular programing language--Python. 
 
@@ -12,7 +12,7 @@ Python allows you to use one of the most popular programing language--Python.
 
 ![image](https://user-images.githubusercontent.com/60185619/197435718-f11ec452-8fd4-4010-b98d-9ebb7a28199d.png)
 
-2) pip3: 
+2) **pip3**: 
 
 Pip3 is the official package manager and pip command for Python 3. It enables the installation and management of third party software packages with features and functionality not found in the Python standard library. Pip3 installs packages from PyPI (Python Package Index), but won’t resolve dependencies or help you solve dependency conflicts.
 
