@@ -44,15 +44,18 @@ The terminal will then start installing PyTorch on your local machine as follows
 
 **STEP 3**: When PyTorch installation is completed, verify PyTorch version by running following Python code below:
 <br/>
+
 ![image](https://user-images.githubusercontent.com/60185619/197438057-3b585476-633a-4f49-8572-79409173328f.png)
 
 <br/>
 
 **Output**: <br/>
-![image](https://user-images.githubusercontent.com/60185619/197438226-48108d79-e337-41d5-bac4-c6fcbabf97b1.png)
-(Note that the "Test1" is my python file name) 
+![image](https://user-images.githubusercontent.com/60185619/197438226-48108d79-e337-41d5-bac4-c6fcbabf97b1.png) <br/>
+
+* Note that the ***Test1*** is the python file name
 
 <br/>
+
 **STEP 4**: Try ***torch_test1*** file, using ***torch.rand()*** function. This will return a tensor filled with uniformly distributed random numbers on [0,1).
 
 ![image](https://user-images.githubusercontent.com/60185619/197672279-2dde6f15-fd2e-4fab-895d-a192dc56badf.png)
