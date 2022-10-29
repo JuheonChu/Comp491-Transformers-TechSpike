@@ -1,4 +1,4 @@
-# ALBERT Q&A System (John Chu, Adia Wu)
+# ALBERT Deep Learning Q&A System (John Chu, Adia Wu)
 
 ## STEP 1: Get Training data
 - Get the SQUAD dataset.
