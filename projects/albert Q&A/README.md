@@ -2,9 +2,10 @@
 
 ## STEP 1: Get Training data
 - Get the SQUAD dataset.
+* Install SQuAD v2.0 to train model with 100,000 answerable questions.
 
 ## STEP 2: Train Model with Albert
-- Train model with training data which takes approximately 2 hours.
+- Train Albert model with training data which takes approximately 2 hours.
 
 ## STEP 3: Hugging Face Library
 - Design *prediction* functions.
