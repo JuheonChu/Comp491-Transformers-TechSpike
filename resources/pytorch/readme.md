@@ -56,7 +56,7 @@ The terminal will then start installing PyTorch on your local machine as follows
 
 <br/>
 
-**STEP 4**: Try ***torch_test1*** file, using ***torch.rand()*** function. This will return a tensor filled with uniformly distributed random numbers on [0,1).
+**STEP 4**: Try ***torch_test1.py*** file, using ***torch.rand()*** function. This will return a tensor filled with uniformly distributed random numbers on [0,1).
 
 ![image](https://user-images.githubusercontent.com/60185619/197672279-2dde6f15-fd2e-4fab-895d-a192dc56badf.png)
 
