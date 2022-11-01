@@ -11,44 +11,67 @@ like SQuAD v2.0.
 
 The [`run.py`](https://github.com/JuheonChu/Natural-Language-Processing/tree/main/projects/albert%20Q%26A) leverage the 🤗 Trainer for fine-tuning. Follow the steps below to train ALBERT Question-Answering model.
 
+**Note:** This script only works with Question-Answering models that have a fast tokenizer (backed by the 🤗 Tokenizers library) as it
+uses special features of those tokenizers. You can check if your favorite model has a fast tokenizer in
+[this table](https://huggingface.co/transformers/index.html#supported-frameworks). In this project, we are using ALBERT model in order to get full PyTorch, TensorFlow, and Flax(Jax) support. Credits to [hugging's Transformers](https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering)
+
 
 ### Check GPU Settings:
 
 We implemented ALBERT Question-Answering model with Google Colab. So, it is necessary to change the runtime type to GPU settings.
 You can choose one of the ways to check your GPA settings.
 
-  - #### NVIDIA
+  - #### NVIDIA 
   ```bash
   !nvidia-smi
   ```
   
-  - #### TensorFlow
-  ```bash
-  import tensorflow as tf
-  device_name = tf.test.gpu_device_name()
-  if device_name != '/device:GPU:0':
-      raise SystemError('No GPU Device found.')
-  print('Found GPU at: {}'.format(device_name))
-  ```
+  - #### TensorFlow (run following python code)
+  ``` python
+  >>> import tensorflow as tf
+  >>> device_name = tf.test.gpu_device_name()
+  # Check GPU setting of the local machine
+  >>> if device_name != '/device:GPU:0':
+  >>>   raise SystemError('GPU Not Found')
+  >>> print('Found GPU at: {}'.format(device_name))
+ ``` 
+  
+  
 
 ### Clone Hugging Face Library from the Github and switch the branch to the working tree
 
 ```bash
+!git clone https://github.com/huggingface/transformers \
+&& cd transformers \
+&& git checkout a3085020ed0d81d4903c50967687192e3101e770 
+```
+
+### Install Transformers & TensorBoardX
+
+```bash
+!pip install ./transformers/
+!pip install tensorboardX
 ```
 
 
-### Fine-tuning BERT on [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/)
+
+### Train ALBERT on [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/)
 
 The [`run.py`]( https://github.com/JuheonChu/Natural-Language-Processing/tree/main/projects/albert%20Q%26A) script
 allows to fine-tune ALBERT model which has a (`ForQuestionAnswering` version in the library) on a question-answering SQuAD dataset in a structured JSON format. 
 
-**Note:** This script only works with Question-Answering models that have a fast tokenizer (backed by the 🤗 Tokenizers library) as it
-uses special features of those tokenizers. You can check if your favorite model has a fast tokenizer in
-[this table](https://huggingface.co/transformers/index.html#supported-frameworks). In this project, we are using ALBERT model in order to get full PyTorch, TensorFlow, and Flax(Jax) support.
-
-This tech-spike code fine-tunes ALBERT on the SQuAD2.0 dataset. It runs in 12=15 min (with BERT-base) or on a single Window V21H2 16GB with i7 Processor. 
 
 #### Command for SQuAD2.0:
+
+First, Create *dataset* directory and install Train & Dev SQuAD v2.0 dataset which is structured in JSON format in *dataset* directory.
+
+```bash
+!mkdir dataset \
+&& cd dataset \
+&& wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json \
+&& wget https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json
+```
+Then, train ALBERT Model. This takes 12-15 minutes for Window 21H2 16.0 GB RAM with i7 Intel Processor. [ALBERT Parameters](https://huggingface.co/docs/transformers/model_doc/albert) are the ALBERT Parameters.
 
 ```bash
 export SQUAD_DIR=/path/to/SQUAD
