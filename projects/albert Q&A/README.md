@@ -18,7 +18,8 @@ uses special features of those tokenizers. You can check if your favorite model 
 
 ### Check GPU Settings:
 
-We implemented ALBERT Question-Answering model with Google Colab. So, it is necessary to change the runtime type to GPU settings.
+We implemented ALBERT Question-Answering model with Google Colab. Click [Here](https://colab.research.google.com/) how to launch Google Colab and manage its settings. So, it is necessary to change the runtime type to GPU settings. Here is the manual how to change the [Google Colab Runtime setting](https://research.google.com/colaboratory/local-runtimes.html)
+
 You can choose one of the ways to check your GPA settings.
 
   - #### NVIDIA 
@@ -36,7 +37,9 @@ You can choose one of the ways to check your GPA settings.
   >>> print('Found GPU at: {}'.format(device_name))
  ``` 
   
-  
+ **Desired Output**: 
+ 
+ ![Output](https://user-images.githubusercontent.com/35699839/199302514-2d576d94-0fb1-463d-9273-3d5fe20e89c6.png)
 
 ### Clone Hugging Face Library from the Github and switch the branch to the working tree
 
