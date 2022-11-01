@@ -71,7 +71,7 @@ First, Create *dataset* directory and install Train & Dev SQuAD v2.0 dataset whi
 && wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json \
 && wget https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json
 ```
-Then, train ALBERT Model. This takes 12-15 minutes for Window 21H2 16.0 GB RAM with i7 Intel Processor. [ALBERT Parameters](https://huggingface.co/docs/transformers/model_doc/albert) are the ALBERT Parameters. ALBERT Model uses SentencePiece file in AlbertTokenizer class.
+Then, train ALBERT Model. This takes 12-15 minutes for Window 21H2 16.0 GB RAM with i7 Intel Processor. [ALBERT Tokenizer](https://huggingface.co/docs/transformers/model_doc/albert) has ALBERT Parameters. ALBERT Model uses SentencePiece file in AlbertTokenizer class.
 
 ```bash
 export SQUAD_DIR=/path/to/SQUAD
