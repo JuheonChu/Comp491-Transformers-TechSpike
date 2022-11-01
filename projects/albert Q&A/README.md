@@ -20,7 +20,7 @@ uses special features of those tokenizers. You can check if your favorite model 
 
 We implemented ALBERT Question-Answering model with Google Colab. Click [Here](https://colab.research.google.com/) how to launch Google Colab and manage its settings. So, it is necessary to change the runtime type to GPU settings. Here is the manual how to change the [Google Colab Runtime setting](https://research.google.com/colaboratory/local-runtimes.html)
 
-You can choose one of the ways to check your GPA settings.
+You can choose one of the ways to check your GPU settings.
 
   - #### NVIDIA 
   ```bash
