@@ -96,31 +96,66 @@ export SQUAD_DIR=/path/to/SQUAD
   --version_2_with_negative 
 ```
 
+### Establish ALBERT Question-Answering Model and Configuration
+
+Albert Model name: "ktrapeznikov/albert-xlarge-v2-squad-v2"
+
+#### Establish ALBERT
+
+``` python
+  >>> import os
+  >>> import torch
+  >>> import time 
+
+  >>> from torch.utils.data import DataLoader 
+
+  >>> from transformers import (
+  >>> AlbertConfig, 
+  >>>     AlbertForQuestionAnswering,
+  >>>     AlbertTokenizer,
+  >>>     squad_convert_examples_to_features
+  >>> )
+
+  >>> from transformers.data.processors.squad import SquadResult, SquadV2Processor, SquadExample
+  >>> from transformers.data.metrics.squad_metrics import compute_predictions_logits
+
+  >>> use_own_model = False
+
+  >>> if use_own_model:
+  >>>   model_name_or_path = "/content/model_output"
+  >>> else:
+  >>>   model_name_or_path = "ktrapeznikov/albert-xlarge-v2-squad-v2"
+
+  >>> output_dir = ""
+  
+ ``` 
+
+ #### Configure ALBERT Q&A Model
+ 
+``` python
+>>> n_best_size = 1
+>>> max_answer_length = 30
+>>> do_lower_case = True 
+>>> null_score_diff_threshold = 0.0 
+```
 
 
+### Set up ALBERT Model & Tensor Attributes
+
+def to_list(tensor):
+  return tensor.detach().cpu().tolist()
+  
+config_class, model_class, tokenizer_class = (
+    AlbertConfig, AlbertForQuestionAnswering, AlbertTokenizer
+)
+config = config_class.from_pretrained(model_name_or_path)
+
+tokenizer = tokenizer_class.from_pretrained(model_name_or_path, do_lower_case=True)
+
+model = model_class.from_pretrained(model_name_or_path, config=config)
 
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+processor = SquadV2Processor()
 
-
-
-
-
-# ALBERT Deep Learning Q&A System (John Chu, Adia Wu)
-
-## STEP 1: Get Training data
-- Get the SQUAD dataset.
-* Install SQuAD v2.0 to train model with 100,000 answerable questions.
-
-## STEP 2: Train Model with Albert
-- Train Albert model with training data which takes approximately 2 hours.
-
-## STEP 3: Hugging Face Library
-- Design *prediction* functions.
-
-## STEP 4: Evaluate Q & A
-  - Run prediction on the answer regarding the question.
-
-## Libraries
-  - PyTorch
-  - TensorFlow
-  - Hugging's Transformers
