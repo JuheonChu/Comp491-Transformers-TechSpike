@@ -142,20 +142,21 @@ Albert Model name: "ktrapeznikov/albert-xlarge-v2-squad-v2"
 
 ### Set up ALBERT Model & Tensor Attributes
 
-def to_list(tensor):
-  return tensor.detach().cpu().tolist()
+```python
+>>> def to_list(tensor):
+>>>  return tensor.detach().cpu().tolist()
   
-config_class, model_class, tokenizer_class = (
-    AlbertConfig, AlbertForQuestionAnswering, AlbertTokenizer
-)
-config = config_class.from_pretrained(model_name_or_path)
+>>> config_class, model_class, tokenizer_class = (
+>>>    AlbertConfig, AlbertForQuestionAnswering, AlbertTokenizer
+>>> )
+>>> config = config_class.from_pretrained(model_name_or_path)
 
-tokenizer = tokenizer_class.from_pretrained(model_name_or_path, do_lower_case=True)
+>>> tokenizer = tokenizer_class.from_pretrained(model_name_or_path, do_lower_case=True)
 
-model = model_class.from_pretrained(model_name_or_path, config=config)
+>>> model = model_class.from_pretrained(model_name_or_path, config=config)
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-processor = SquadV2Processor()
+>>> device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+>>> model.to(device)
+>>> processor = SquadV2Processor()
 
