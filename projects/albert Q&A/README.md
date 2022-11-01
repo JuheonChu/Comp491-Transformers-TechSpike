@@ -7,9 +7,35 @@ Albert Question-Answering Deep Learning Model (John Chu, Adia Wu)
 This folder contains several scripts that showcase how to fine-tune a 🤗 Transformers model on a question answering dataset,
 like SQuAD v2.0.
 
-## Trainer-based scripts
+## Abstract
 
-The [`run.py`](https://github.com/JuheonChu/Natural-Language-Processing/tree/main/projects/albert%20Q%26A) leverage the 🤗 Trainer for fine-tuning.
+The [`run.py`](https://github.com/JuheonChu/Natural-Language-Processing/tree/main/projects/albert%20Q%26A) leverage the 🤗 Trainer for fine-tuning. Follow the steps below to train ALBERT Question-Answering model.
+
+
+### Check GPU Settings:
+
+We implemented ALBERT Question-Answering model with Google Colab. So, it is necessary to change the runtime type to GPU settings.
+You can choose one of the ways to check your GPA settings.
+
+  - #### NVIDIA
+  ```bash
+  !nvidia-smi
+  ```
+  
+  - #### TensorFlow
+  ```bash
+  import tensorflow as tf
+  device_name = tf.test.gpu_device_name()
+  if device_name != '/device:GPU:0':
+      raise SystemError('No GPU Device found.')
+  print('Found GPU at: {}'.format(device_name))
+  ```
+
+### Clone Hugging Face Library from the Github and switch the branch to the working tree
+
+```bash
+```
+
 
 ### Fine-tuning BERT on [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/)
 
@@ -21,31 +47,6 @@ uses special features of those tokenizers. You can check if your favorite model 
 [this table](https://huggingface.co/transformers/index.html#supported-frameworks). In this project, we are using ALBERT model in order to get full PyTorch, TensorFlow, and Flax(Jax) support.
 
 This tech-spike code fine-tunes ALBERT on the SQuAD2.0 dataset. It runs in 12=15 min (with BERT-base) or on a single Window V21H2 16GB with i7 Processor. 
-
-#### Check GPU Settings:
-
-We implemented ALBERT Question-Answering model with Google Colab. So, it is necessary to change the runtime type to GPU settings.
-You can choose one of the ways to check your GPA settings.
-
-  - NVIDIA
-  ```bash
-  !nvidia-smi
-  ```
-  
-  - TensorFlow
-  ```bash
-  import tensorflow as tf
-  device_name = tf.test.gpu_device_name()
-  if device_name != '/device:GPU:0':
-      raise SystemError('No GPU Device found.')
-  print('Found GPU at: {}'.format(device_name))
-  ```
-
-#### Clone Hugging Face Library from the Github and switch the branch to the working tree
-
-```bash
-```
-
 
 #### Command for SQuAD2.0:
 
@@ -71,11 +72,6 @@ export SQUAD_DIR=/path/to/SQUAD
   --threads 4 \
   --version_2_with_negative 
 ```
-
-
-
-
-
 
 
 
