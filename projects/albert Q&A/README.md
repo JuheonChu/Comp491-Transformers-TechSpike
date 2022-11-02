@@ -16,6 +16,9 @@ uses special features of those tokenizers. You can check if your favorite model 
 [this table](https://huggingface.co/transformers/index.html#supported-frameworks). In this project, we are using ALBERT model in order to get full PyTorch, TensorFlow, and Flax(Jax) support. Credits to [hugging's Transformers](https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering)
 
 
+## Installation
+
+
 ### Check GPU Settings:
 
 We implemented ALBERT Question-Answering model with Google Colab. Click [Here](https://colab.research.google.com/) how to launch Google Colab and manage its settings. So, it is necessary to change the runtime type to GPU settings. Here is the manual how to change the [Google Colab Runtime setting](https://research.google.com/colaboratory/local-runtimes.html)
