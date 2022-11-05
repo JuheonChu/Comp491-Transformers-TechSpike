@@ -5,6 +5,6 @@ All team members in Transformers are required to be highly proficient in skills 
 Three mainstream libraries that are utilized for Hugging's Transformers are PyTorch, TensorFlow, and Jax.
 Therefore, Transformers group assigned following responsible team members to implement tech-spike features using following deep learning libraries, and the tech-spike projects can be found in **projects directory.
 
-** PyTorch: John Chu, Adia Wu
-** TensorFlow: Evan Bates, Billy Lee
-** Jax: Katie Le, Philip Mollerus
+* PyTorch: John Chu, Adia Wu
+* TensorFlow: Evan Bates, Billy Lee
+* Jax: Katie Le, Philip Mollerus
