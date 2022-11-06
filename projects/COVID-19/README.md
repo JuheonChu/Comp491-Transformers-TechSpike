@@ -1,4 +1,4 @@
-# Covid-19-Infection-Percentage-Estimation-Challenge
+# Covid-19-Infection-Percentage-Estimation
 
 This is a competetion organized at [codalab](https://competitions.codalab.org/competitions/35575#learn_the_details-evaluation). The problem is to find percentage of infection caused by COVID in Chest CT scan. This problem is different from classification where we figure out whether the person is infected by COVID or not. In this competetion we have found out the percentage of infection caused. 
 
