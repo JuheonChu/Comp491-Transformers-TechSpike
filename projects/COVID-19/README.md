@@ -9,10 +9,10 @@ The evaluation cirtieria for the competetion is **mean absolute error (mae)**. T
 
 Dataset is available at [github](https://github.com/faresbougourzi/Covid-19-Infection-Percentage-Estimation-Challenge) and we have downloaded it. 
 
-## Our approach
+## Tech-spike Skills
 We need following things
 * a deep learning model
 * a loss function
 * 5 fold cross validation approach
 * an optimizer
-* few augmentation function
+* augmentation function
