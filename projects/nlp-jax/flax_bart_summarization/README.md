@@ -4,7 +4,7 @@ Link to FlaxBARTConditionalGeneration source code https://github.com/huggingface
 import jax
 import jax.numpy as jnp
 
-class FlaxBartForConditionalGeneration(FlaxBartPreTrainedModel):
+class <b>FlaxBartForConditionalGeneration</b>(FlaxBartPreTrainedModel):
     dtype: jnp.dtype = jnp.float32
     
     ....
@@ -35,13 +35,7 @@ class FlaxBartForConditionalGeneration(FlaxBartPreTrainedModel):
             
     def prepare_inputs_for_generation(
         ...
-        attention_mask: Optional[jnp.DeviceArray] = None,
-        decoder_attention_mask: Optional[jnp.DeviceArray] = None,
-        ...
     ):
-     
-        if ...
-            ...
         else:
             position_ids = <b>jnp.broadcast_to(jnp.arange(seq_length, dtype="i4")[None, :], (batch_size, seq_length))</b>
 
