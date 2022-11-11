@@ -1,6 +1,6 @@
 Link to FlaxBARTConditionalGeneration source code https://github.com/huggingface/transformers/blob/v4.24.0/src/transformers/models/bart/modeling_flax_bart.py#L1327
 
-```
+<pre>
 import jax
 import jax.numpy as jnp
 
@@ -10,27 +10,27 @@ class FlaxBartForConditionalGeneration(FlaxBartPreTrainedModel):
     ....
     def decode(
         ...
-        encoder_attention_mask: Optional[jnp.ndarray] = None,
-        decoder_attention_mask: Optional[jnp.ndarray] = None,
-        decoder_position_ids: Optional[jnp.ndarray] = None,
+        encoder_attention_mask: <b>Optional[jnp.ndarray]</b> = None,
+        decoder_attention_mask: <b>Optional[jnp.ndarray]</b> = None,
+        decoder_position_ids: <b>Optional[jnp.ndarray]</b> = None,
         dropout_rng: PRNGKey = None,
     ):
     
         if encoder_attention_mask is None:
             ...
-            encoder_attention_mask = jnp.ones((batch_size, sequence_length))
+            encoder_attention_mask = <b>jnp.ones((batch_size, sequence_length))</b>
         ...
         if decoder_attention_mask is None:
-            decoder_attention_mask = jnp.ones((batch_size, sequence_length))
+            decoder_attention_mask = <b>jnp.ones((batch_size, sequence_length))</b>
         ...
         if decoder_position_ids is None:
             ...
-            decoder_position_ids = jnp.broadcast_to(
-                jnp.arange(sequence_length)[None, :], (batch_size, sequence_length)
+            decoder_position_ids = <b>jnp.broadcast_to(
+                jnp.arange(sequence_length)[None, :], (batch_size, sequence_length)</b>
         ...
         outputs = self.module.apply(
             inputs,
-            decoder_input_ids=jnp.array(decoder_input_ids, dtype="i4"
+            decoder_input_ids= <b>jnp.array(decoder_input_ids, dtype="i4"</b>
             ...)
             
     def prepare_inputs_for_generation(
@@ -43,9 +43,9 @@ class FlaxBartForConditionalGeneration(FlaxBartPreTrainedModel):
         if ...
             ...
         else:
-            position_ids = jnp.broadcast_to(jnp.arange(seq_length, dtype="i4")[None, :], (batch_size, seq_length))
+            position_ids = <b>jnp.broadcast_to(jnp.arange(seq_length, dtype="i4")[None, :], (batch_size, seq_length))</b>
 
     def update_inputs_for_generation(self, model_outputs, model_kwargs):
         ...
         
-```
+<pre>
