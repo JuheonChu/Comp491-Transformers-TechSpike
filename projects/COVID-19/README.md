@@ -14,8 +14,8 @@ Dataset is available at [github](https://github.com/faresbougourzi/Covid-19-Infe
 ## Model
 - pretrained VGG-19 with batch normalization as our model
 - Objective Function: cross entropy loss
-- Architecture: 
-  ![VGG Architecture] (https://user-images.githubusercontent.com/35699839/201311679-69d85aed-026d-4225-b962-a9776c550318.png)
+- Architecture: <br>
+  ![VGG Architecture](https://user-images.githubusercontent.com/35699839/201311679-69d85aed-026d-4225-b962-a9776c550318.png)
 - Parameters: Optimizer running with Stochastic Gradient descent algorithm with Momentum value of .9
 
 ## Testing
